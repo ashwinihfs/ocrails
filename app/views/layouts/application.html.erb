@@ -17,8 +17,17 @@
   <body>
     <div id="wrap">
       <div id="main">
-        <%= render 'layouts/header' %>
-        <%= yield %>
+        <div class='row'>
+          <%= render 'layouts/header' %>
+        </div>
+        <div class='row'>
+          <% flash.each do |key, value| %>
+            <%= content_tag :div, value, class: "alert-box #{key} round" %>
+          <% end %>
+        </div>
+        <div class='row'>
+          <%= yield %>
+        </div>
       </div>
     </div>
     <%= render 'layouts/footer' %>

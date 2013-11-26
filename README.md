@@ -12,6 +12,18 @@ Mission
 * Create a framework that other developer groups can reuse for their own purposes
 
 
+Configuration
+=============
+
+There are configuration files you need to look at before trying to run this
+
+1. Create a .env file (do not check in to version control), you can use the .env_example file as an example.
+  This file contains the environment varianles you need (that keep secret data out of the repositories, and is
+  automatically read by Foreman, or Heroku.
+
+
+
+
 Contributors
 ============
 

@@ -17,4 +17,11 @@ Ocrails::Application.routes.draw do
   # Blog
   get '/blog' => 'blog#index'
 
+  # Authorization
+
+  match '/auth/:provider/callback', to: 'sessions#create', via: [:get, :post]
+  get '/sign_out', to: 'sessions#destroy', as: 'sign_out'
+  get '/sign_in', to: 'sessions#new', as: 'sign_in'
+  get '/auth/failure', to: 'sessions#failure'
+  resources :identities, only: [:new]
 end
