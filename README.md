@@ -1,7 +1,7 @@
 ocrails.com
 ============
 
-Group page for the Orange County Ruby on Rails meetup. 
+Group page for the Orange County Ruby on Rails meetup.
 
 
 Mission
@@ -17,14 +17,18 @@ Contributors
 
 * Juan Gallardo
     * [GitHub](https://github.com/JGallardo)
-    * [Twitter](https://twitter.com/JGallardo2600)  
+    * [Twitter](https://twitter.com/JGallardo2600)
 
 * Harssh S Shrivastava
     * [GitHub](https://github.com/harsshhfs)
-    * [Twitter](https://twitter.com/harssh219) 
+    * [Twitter](https://twitter.com/harssh219)
+
+* Mike Simkins
+    * [GitHub](https://github.com/msimkins)
+    * [Twitter](https://twitter.com/g7obs)
 
 License
-============    
+============
 
 MIT Open Source License
 
