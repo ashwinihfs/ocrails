@@ -5,6 +5,7 @@ require 'simplecov'
 SimpleCov.start 'rails'
 require 'rspec/rails'
 require 'rspec/autorun'
+require 'capybara/email/rspec'
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
@@ -46,4 +47,5 @@ RSpec.configure do |config|
   # If all tests are tagged, ir if none are tagged - run all specs
   config.filter_run :focus => true
   config.run_all_when_everything_filtered = true
+  # Add any miscellaneous specs past this point
 end

@@ -24,4 +24,5 @@ Ocrails::Application.routes.draw do
   get '/sign_in', to: 'sessions#new', as: 'sign_in'
   get '/auth/failure', to: 'sessions#failure'
   resources :identities, only: [:new]
+  resources :password_resets
 end

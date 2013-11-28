@@ -16,6 +16,7 @@ gem 'omniauth', '~> 1.1.4'
 gem 'omniauth-twitter', '~> 1.0.0'
 gem 'omniauth-facebook', '~> 1.5.0'
 gem 'omniauth-identity', '~> 1.1.0'
+gem 'rails-i18n', '~> 4.0.0'
 
 
 group :doc do
@@ -37,7 +38,9 @@ end
 
 group :test do
   gem 'capybara', '~> 2.1.0'
+  gem 'capybara-email'
   gem 'simplecov', '~> 0.8.0', require: false
+  gem 'timecop'
 end
 
 group :production do

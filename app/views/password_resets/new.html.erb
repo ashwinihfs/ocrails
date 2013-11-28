@@ -1,0 +1,12 @@
+<h1>Reset your Password</h1>
+
+Please enter your E-Mail Address in the field below, and if it is valid, we will send you a password reset code.
+This code will only be valid for 4 hours, after which time it will expire.
+
+<%= form_tag password_resets_path, :method => :post do %>
+  <div class="field">
+    <%= label_tag :email, 'E-Mail' %>
+    <%= text_field_tag :email, params[:email] %>
+  </div>
+  <div class="actions"><%= submit_tag t('form.password_resets.reset_password') %></div>
+<% end %>
