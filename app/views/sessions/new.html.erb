@@ -1,0 +1,27 @@
+<h1>Sign In</h1>
+
+<a href="/auth/twitter" class="auth_provider">
+<%= image_tag "twitter_64.png", :size => "64x64",:alt => "Twitter" %>Twitter</a>
+<a href="/auth/facebook" class="auth_provider">
+  <%= image_tag "facebook_64.png", :size => "64x64",:alt => "Facebook" %>Facebook</a>
+
+
+<div class="clearfix"></div>
+<p>
+  <strong><%= t('sessions.no_account_text') %></strong>
+  <%= link_to t('sessions.create_account'), new_identity_path %> <%= t('sessions.login_message') %>
+</p>
+
+<%= form_tag '/auth/identity/callback' do %>
+  <div class='field'>
+    <%= label_tag :auth_key, t('sessions.email') %><br>
+    <%= text_field_tag :auth_key %>
+  </div>
+  <div class='field'>
+    <%= label_tag :password, t('sessions.password') %><br>
+    <%= password_field_tag :password %>
+  </div>
+  <div class='actions'><%= submit_tag t('sessions.login') %></div>
+<% end %>
+
+<p><%= link_to t('form.sessions.forgot_password'), new_password_reset_path %></p>
