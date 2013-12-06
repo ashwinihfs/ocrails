@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.1'
+gem 'rails', '4.0.2'
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '~> 2.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -38,9 +38,9 @@ end
 
 group :test do
   gem 'capybara', '~> 2.1.0'
-  gem 'capybara-email'
+  gem 'capybara-email', '~> 2.2.0'
   gem 'simplecov', '~> 0.8.0', require: false
-  gem 'timecop'
+  gem 'timecop', '~>0.6.0'
 end
 
 group :production do
