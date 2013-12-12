@@ -11,7 +11,7 @@ gem 'turbolinks', '~> 1.3.0'
 gem 'jbuilder', '~> 1.2'
 gem 'thin', '~> 1.6.0'
 
-gem 'dotenv-rails', '~> 0.9.0'
+gem 'figaro', '~> 0.7.0'
 gem 'omniauth', '~> 1.1.4'
 gem 'omniauth-twitter', '~> 1.0.0'
 gem 'omniauth-facebook', '~> 1.5.0'
