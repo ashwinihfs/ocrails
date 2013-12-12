@@ -17,12 +17,44 @@ Configuration
 
 There are configuration files you need to look at before trying to run this
 
-1. Create a .env file (do not check in to version control), you can use the .env_example file as an example.
-  This file contains the environment varianles you need (that keep secret data out of the repositories, and is
-  automatically read by Foreman, or Heroku.
+1. Create a `config/application.yml` file (do not check in to version control), you can use the `config/application_example.yml` file as an example.
+
+   This file contains the environment variables you need (that keep secret data out of the repositories)
 
 
+Deployment Configuration
+========================
 
+Heroku
+------
+
+On Heroku, you need to replace the configuration that would normally be placed in `config/application.yml` by a series of
+config:set commands
+
+Example:
+
+*Enable Twitter Login*
+
+    heroku config:set OC_TWITTER_ENABLE: true
+    heroku config:set OC_TWITTER_KEY: Twitter_Key_Goes_Here
+    heroku config:set OC_TWITTER_SECRET: Twitter_Secret_Goes_Here
+
+You can also push the current contects of your `config/application.yml` to heroku by using the `rake figaro:heroku` task
+
+When using the `config:set` option, Heroku will automatically restart your application.
+
+Other VPS / Physical Providers
+------------------------------
+
+Create a file called `config/application.yml` (you can use the contents of `config/application_example.yml`), this is a standard
+YAML file, so to enable the twitter login example on Heroky, your application.yml would contain the following:-
+
+
+    OC_TWITTER_ENABLE: true
+    OC_TWITTER_KEY: Twitter_Key_Goes_Here
+    OC_TWITTER_SECRET: Twitter_Secret_Goes_Here
+
+Please make sure you restart the server / application after making any changes to `config/application.yml`
 
 Contributors
 ============

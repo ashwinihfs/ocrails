@@ -1,10 +1,15 @@
 <h1>Sign In</h1>
 
-<a href="/auth/twitter" class="auth_provider">
-<%= image_tag "twitter_64.png", :size => "64x64",:alt => "Twitter" %>Twitter</a>
-<a href="/auth/facebook" class="auth_provider">
-  <%= image_tag "facebook_64.png", :size => "64x64",:alt => "Facebook" %>Facebook</a>
-
+<% if omniauth_external_providers? %>
+  <% if omniauth_provider?(:twitter) %>
+    <a href="/auth/twitter" class="auth_provider">
+    <%= image_tag "twitter_64.png", :size => "64x64",:alt => "Twitter" %>Twitter</a>
+  <% end %>
+  <% if omniauth_provider?(:facebook) %>
+    <a href="/auth/facebook" class="auth_provider">
+    <%= image_tag "facebook_64.png", :size => "64x64",:alt => "Facebook" %>Facebook</a>
+  <% end %>
+<% end %>
 
 <div class="clearfix"></div>
 <p>
