@@ -13,7 +13,11 @@
 
 <div class="clearfix"></div>
 <p>
+  <% if omniauth_external_providers? %>
   <strong><%= t('sessions.no_account_text') %></strong>
+  <% else %>
+  <%= t('sessions.please') %>
+  <% end %>
   <%= link_to t('sessions.create_account'), new_identity_path %> <%= t('sessions.login_message') %>
 </p>
 
