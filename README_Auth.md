@@ -1,5 +1,5 @@
-Set Up Authorization
-====================
+# Set Up Authorization #
+
 
 In order to set up the authorization system you will need to create a token at each external service you
 wish to support
@@ -11,8 +11,7 @@ Initially we support
 * Local Identity (E-Mail/Password)
 
 
-Application Setup
-=================
+# Application Setup #
 
 Once you have your (external) Provider Key, and Secret, you need to add these to a file at the root of the project
 called .env (if you want separate ones for your development / test environment, create .env.development, or .env.test)

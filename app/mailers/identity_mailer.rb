@@ -1,3 +1,5 @@
+#
+# the IdentityMailer contains all the logic needed to represent the Mailer classes associated with the Identity Module
 class IdentityMailer < ActionMailer::Base
   default from: "from@example.com"
 

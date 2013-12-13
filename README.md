@@ -1,19 +1,17 @@
-ocrails.com
-============
+# ocrails.com #
+
 
 Group page for the Orange County Ruby on Rails meetup.
 
 
-Mission
-============
+## Mission ##
 
 * Bring together local Rails developers
 * Share information worldwide with other developers
 * Create a framework that other developer groups can reuse for their own purposes
 
 
-Configuration
-=============
+## Configuration ##
 
 There are configuration files you need to look at before trying to run this
 
@@ -22,11 +20,11 @@ There are configuration files you need to look at before trying to run this
    This file contains the environment variables you need (that keep secret data out of the repositories)
 
 
-Deployment Configuration
-========================
+## Deployment Configuration ##
 
-Heroku
-------
+
+### Heroku ###
+
 
 On Heroku, you need to replace the configuration that would normally be placed in `config/application.yml` by a series of
 config:set commands
@@ -43,8 +41,8 @@ You can also push the current contects of your `config/application.yml` to herok
 
 When using the `config:set` option, Heroku will automatically restart your application.
 
-Other VPS / Physical Providers
-------------------------------
+### Other VPS / Physical Providers ###
+
 
 Create a file called `config/application.yml` (you can use the contents of `config/application_example.yml`), this is a standard
 YAML file, so to enable the twitter login example on Heroky, your application.yml would contain the following:-
@@ -56,8 +54,8 @@ YAML file, so to enable the twitter login example on Heroky, your application.ym
 
 Please make sure you restart the server / application after making any changes to `config/application.yml`
 
-Contributors
-============
+# Contributors #
+
 
 * Juan Gallardo
     * [GitHub](https://github.com/JGallardo)
@@ -71,8 +69,7 @@ Contributors
     * [GitHub](https://github.com/msimkins)
     * [Twitter](https://twitter.com/g7obs)
 
-License
-============
+# License #
 
 MIT Open Source License
 
