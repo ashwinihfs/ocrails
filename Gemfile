@@ -18,12 +18,9 @@ gem 'omniauth-facebook', '~> 1.5.0'
 gem 'omniauth-identity', '~> 1.1.0'
 gem 'rails-i18n', '~> 4.0.0'
 
-
 group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', '~> 0.3.20', require: false
 end
-
 group :development, :test do
   gem 'sqlite3', '~> 1.3.8'
   gem 'better_errors', '~> 1.0.0'
@@ -34,6 +31,7 @@ end
 
 group :development do
   gem 'brakeman', '~> 2.2.0'
+  gem 'yard'
 end
 
 group :test do
